@@ -1,2 +1,8 @@
 # techblok
-al het werk voor blok tech (blok 3) van tom klas 209
+## In de readme komen de antwoorden op de volgende vragen:
+
+* Wat wilt iemand weten die het project bekijkt?
+
+* Hoe installeer je het project?
+
+* Wat doet de feature die ik ga maken?
