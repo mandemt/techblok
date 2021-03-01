@@ -1,0 +1,28 @@
+
+body{
+	width:100%;
+	background-color:#1abc9c;
+	font-family:Arial;
+	color:#ecf0f1;
+	text-align:center;
+	margin:0; padding:0;
+}
+
+body ol:first-of-type{
+	
+	display:flex;
+	list-style-type:none;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+body ol:first-of-type li{
+	width:20em;
+	background-color:#f1c40f;
+	margin-right:3em;
+	border-radius:1em;
+
+}
+
+div{
+	background-color:#2ecc71;
+}
