@@ -1,8 +1,11 @@
 # techblok
-## In de readme komen de antwoorden op de volgende vragen:
+#### To do
+ readme afmaken
+ 
+ wiki indelen
 
-* Wat wilt iemand weten die het project bekijkt?
+wireframe nieuwe job story
 
-* Hoe installeer je het project?
-
-* Wat doet de feature die ik ga maken?
+## Wat dit project doet
+## Wat de feature doet
+## Hoe je dit project installeert en zelf uittest.
