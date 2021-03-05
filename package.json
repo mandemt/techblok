@@ -4,8 +4,7 @@
   "description": "informatie",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "start": "echo 'hallo world'"
+    "serverstart": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +22,15 @@
   },
   "homepage": "https://github.com/mandemt/techblok#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "camelcase": "^6.2.0",
     "express": "^4.17.1",
     "less": "^4.1.1",
     "pug": "^3.0.2"
   },
   "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
     "nodemon": "^2.0.7"
   }
 }

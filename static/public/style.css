@@ -9,13 +9,14 @@ body{
 }
 
 body ol:first-of-type{
-	
+	display:block ;
 	display:flex;
 	list-style-type:none;
 	flex-wrap:wrap;
 	justify-content:space-around;
 }
 body ol:first-of-type li{
+	display:block;
 	width:20em;
 	background-color:#f1c40f;
 	margin-right:3em;
@@ -23,6 +24,9 @@ body ol:first-of-type li{
 
 }
 
+.info{
+	display:none;
+}
 div{
 	background-color:#2ecc71;
 }
