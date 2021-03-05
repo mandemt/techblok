@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	  <link rel="stylesheet" href="style.css">
+
 	<title>Inloggen</title>
 </head>
 <body>
 <nav>
+		<button>opgeslagen</button>
 	<h1>Inloggen</h1>
-	<button>Opgeslagen</button>
-</nav>
+	<a href="javascript:javascript:history.go(-1)">Terug</a>
+	</nav>
 
 <form action="inloggen/add.html" method="POST">Naam
 <input type="text" name="name" required>
 <input type="submit" value="a">
+
+<p>Welkom, #{naam} !</p>
+
+<a href="interesses.html">Vind vrienden</a>
 </form>
 </body>
 </html>

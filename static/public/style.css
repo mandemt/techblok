@@ -23,10 +23,47 @@ body ol:first-of-type li{
 	border-radius:1em;
 
 }
+ul{
+	list-style-type:none;
+	padding-top:5em;
+}
+ul li:nth-of-type(odd){
+	background-color:aqua;
+}
+ul li:nth-of-type(even){
+	background-color:gray;
+}
+nav{
+	top:0;
+	left:37em;
+	background-color:orange;
 
-.info{
-	display:none;
+	position:fixed;
+
+	display:flex;
+
+}
+nav a{
+	padding-top:1.5em;
+	background-color:red;
 }
 div{
 	background-color:#2ecc71;
+}
+form{
+	margin-top:10em;
+}
+form ul{
+	margin:0 auto;
+	display:flex;
+	list-style-type:none;
+	max-width:35em;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+form li input{
+	width:10em;
+	height:10em;
+	margin:2em 5em;
+	background-color:black;
 }
