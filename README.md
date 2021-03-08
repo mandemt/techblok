@@ -1,9 +1,8 @@
 # techblok
-#### To do
- readme afmaken
+#### To do PROJECT
  
- wiki indelen
 
+[ ] fsd
 wireframe nieuwe job story
 
 ## Wat dit project doet
