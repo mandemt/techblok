@@ -1,9 +1,21 @@
 # techblok
-#### To do
- readme afmaken
+#### To do PROJECT
  
- wiki indelen
 
+
+
+
+
+
+* [ ]  Research stylelint afmaken
+* [ ]  Clean Code artikel
+* [ ]  JavaScript design patterns artikel
+* [ ]  1 build tool
+* [ ]  hosting service
+* [ ]  APA
+* [ ]  wireframe uploaden
+* [ ]  HTML/CSS/STATES
+* [ ]  Andere apps onderzoeken
 wireframe nieuwe job story
 
 ## Wat dit project doet
