@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-	  <link rel="stylesheet" href="style.css">
-
-	<title>Interesses opgeven</title>
-</head>
-<body>
-<nav>
-	<button>opgeslagen</button>
-	<h1>Interesses</h1>
-	<a href="javascript:javascript:history.go(-1)">Terug</a>
-</nav>
-<form action="resultaten.html" method="POST">
-<ul>
-
-	<li>
-		<input type="image" alt="vissen" src="">
-	</li>
-
-	<li>
-		<input type="image" alt="gooien" src="">
-	</li>
-	<li>
-		<input type="image" alt="bakken" src="">
-	</li>
-	<li>
-		<input type="image" alt="braden" src="">
-	</li>
-	<li>
-		<input type="image" alt="graven" src="">
-	</li>
-	<li>
-		<input type="image" alt="zingen" src="">
-	</li>
-	<li>
-		<input type="image" alt="lopen" src="">
-	</li>
-	<li>
-		<input type="image" alt="eten" src="">
-	</li>
-	
-	<li><input type="submit">Versturen</li>
-	
-</ul>
-</form>
-
-
-</body>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Interesses opgeven</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<a href="opgeslagen.html"><img src="img/opgeslagen.svg" alt=""></a>
+			<h1>Interesses</h1>
+	<a href="javascript:javascript:history.go(-1)"><img src="img/terugknop.svg" alt=""></a>
+			
+		</nav>
+		<form action="resultaten.html" method="post" required= "required">
+			<ul>
+				<li>
+					<label>
+						<img src="img/interesses/vissen.svg" alt="vissen">
+						<input type="checkbox" value="vissen"
+						name="vissen">
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/gooien.svg"	 alt="gooien">
+						<input type="checkbox" value="gooien" name="gooien">
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/bakken.svg" alt="bakken">
+						<input type="checkbox" value="bakken" name="bakken">
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/braden.svg" alt="braden">
+						<input type="checkbox" value="braden" name="braden">
+						
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/graven.svg" alt="graven">
+						<input type="checkbox" value="graven" name="graven">
+						
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/lopen.svg" alt="lopen">
+						<input type="checkbox" value="lopen" name="lopen">
+						
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/zingen.svg" alt="zingen">
+						<input type="checkbox" value="zingen" name="zingen">
+					</label>
+				</li>
+				<li>
+					<label>
+						<img src="img/interesses/eten.svg" alt="eten">
+						<input type="checkbox" value="eten" name="eten" 
+						>
+					</label>
+				</li>
+				<li>
+					<input type="submit" value="keuze opslaan">
+				</li>
+				
+				
+			</ul>
+		</form>
+			<footer>
+		<p>Tom Mandemaker klas 209 | mandemt | 2021</p>
+	</footer>
+	</body>
 </html>
