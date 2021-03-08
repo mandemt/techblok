@@ -1,10 +1,19 @@
-# techblok
-#### To do PROJECT
+
+
  
 
 ![Banner MagnetMatch](https://github.com/mandemt/techblok/blob/main/wiki/logo%20readme.png)
 
+## Inhoud README
 
+Wat het project doet
+Wat de feature doet
+Installeren
+
+Testen feature
+
+
+#### To do PROJECT
 
 * [ ]  Research stylelint afmaken
 * [ ]  Clean Code artikel
