@@ -14,25 +14,31 @@ nav{
 	align-items:center;
 
 
-	height:540px;
+	height:440px;
 	width:100%;
 
 	box-shadow: 0 5px 5px black;
 	top:0;
-	background-color:#2ecc71;
+	background-color:#2c3e50;
 }
 
 
 h1{
+	color:#ecf0f1 ;
 	margin-top:0;
 	font-size:5em;
+}
+
+nav img{
+
+	height:150px;
 }
 
 
 nav a{
 	position:absolute;
 	height:50px;
-	margin-top: 490px;
+	margin-top: 390px;
 	background-color: #2980b9;
 	box-shadow:0 0 5px black;
 	border:none;
@@ -59,9 +65,46 @@ article{
 	font-family:Roboto;
 	text-align:center;
 	font-size:2em;
-	margin-top:600px;
+	margin-top:500px;
 }
 
 article h2{
 	text-transform:uppercase;
+}
+
+.nav{
+	vertical-align:middle;
+	flex-direction:row;
+	height:auto;
+}
+
+.nav a{
+	position:relative;
+	margin-top:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	text-align:center;
+	padding:0;
+	color:#ecf0f1 ;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background-color:#2c3e50;
 }
