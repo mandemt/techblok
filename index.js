@@ -2,13 +2,44 @@ console.log('hallo world')
 
 const express = require('express'); // express wordt gebruikt
 const app = express(); 
-const port = 3000; // met localhost:3000 bezoek je de server in de browser
+const port = 4000; // met localhost:3000 bezoek je de server in de browser
+
+
+
+const personen = [
+	{"id": "mandemt", "gebruikersnaam": "mandemt", "interesses": ["vissen", "hakken", "zingen"]},
+	{"id": "hans", "gebruikersnaam": "hans", "interesses": ["bakken", "braden", "hakken"]},
+	{"id": "piet", "gebruikersnaam": "piet", "interesses": ["bakken", "zingen", "vissen"]},
+	{"id": "admin", "gebruikersnaam": "admin", "interesses": ["zingen"]},
+	
+
+
+
+];
 var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt om het verwerken van data uit een request makkelijker te maken
 
+app.get('/addpersoon', (req,res) =>{
+	console.log('add')
+	res.render('index', {title:"persoon toevoegen"})
+})
+
+app.get('addpersoon.html', (req,res)=>{
+	const movie = {name: req.body.gebruikersnaam, interesses: req.body.interesses};
+	console.log(personen)
+	res.render('interesses', {title: "toegevoegd",})
+})
+
+app.get('/personen', (req,res) => {
+	res.render('index')
+})
 
 
-const voorNaam = ["Hans", "Tom", "Piet"]
-const interesses = ["vissen", "gooien", "zagen"]
+app.get('/personen/:personenId', (req, res) => {
+	const personen = personen.find (personen => personen.id == req.params.personenId);
+	res.render('index', {title: "persoon", personen})
+	console.log('personenId')
+})
+
 app.set('view engine', 'pug') // instellen voor view engine
 
 app.get('/', (req,res) =>{
@@ -16,6 +47,11 @@ app.get('/', (req,res) =>{
 })
 
 
+
+app.get('/inloggen', (req,res) => {
+
+	res.render('inloggen', {title:"account toevoegen"})
+})
 
 
 
@@ -26,15 +62,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 
-app.get('/inloggen', (req,res) => {
 
-	res.render('inloggen', {title:"account toevoegen"})
-})
-
-app.get('/inloggen/add.html', (req,res) => {
-	console.log('nu toevoegen')
-	res.render('index' , {title:"add"})
-})
 
 
 
