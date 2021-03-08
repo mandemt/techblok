@@ -83,7 +83,7 @@ app.use(express.static('public')) // nu worden er static files opgevraagd vanuit
 
 
 app.listen(port, () =>{
-	console.log('de app lusitert op localhost:3000')
+	console.log('de app lusitert op localhost:4000')
 })
 
 app.use(function(req,res,next){
