@@ -7,17 +7,18 @@
 </head>
 <body>
 <nav class="nav">
-		<button>opgeslagen</button>
+		<a href="opgeslagen.html"><img src="img/opgeslagen.svg" alt=""></a>
 	<h1>Inloggen</h1>
-	<a href="javascript:javascript:history.go(-1)">Terug</a>
+	<a href="javascript:javascript:history.go(-1)"><img src="img/terugknop.svg" alt=""></a>
 	</nav>
-
-<form action="inloggen/add.html" method="POST">Naam
-<input type="text" name="name" required>
-<input type="submit" value="a">
-
+<main>
+	<form action="inloggen/add.html" method="post">
+		Log hier in
+		<input type="text" name="voornaam" required="required" placeholder="gebruikersnaam">
+		<input type="submit">
+</form>
 <p>Welkom, #{naam} !</p>
-
+</main>
 <a href="interesses.html">Vind vrienden</a>
 </form>
 </body>
