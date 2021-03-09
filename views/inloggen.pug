@@ -1,14 +1,17 @@
 doctype html
 head
-
-
-title= title
-style
-    include style.css
-nav
-  h1 
-  button Opgeslagen
-form(action='/addpersoon.html' method='post')
-  | Naam
-  input(type='text' name='gebruikersnaam' required='')
-  input(type='submit' value='Aanmelden')
+  link(rel='stylesheet' href='style.css')
+  title Home
+nav.nav
+  a(href='opgeslagen.html')
+    img(src='img/opgeslagen.svg' alt='')
+  h1 MagnetMatch
+  a(href='javascript:javascript:history.go(-1)')
+    img(src='img/terugknop.svg' alt='')
+main
+  h2 &#x9;Log hier in
+  form(action='interesses.html' method='post')
+    input(type='text' name='voornaam' required='required' placeholder='gebruikersnaam')
+    input(type='submit' value='Log in')
+footer
+  p Tom Mandemaker klas 209 | mandemt | 2021

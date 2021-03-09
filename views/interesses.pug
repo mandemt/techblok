@@ -1,11 +1,48 @@
-html
+doctype html
 head
-
-title= title
-
-body
-include includes/dezemoet.pug
-h2 Afkomstig van de layout zelf interess.pug
-
-p mijn naam is #{voorNaam[1]}
-p mijn interesse is #{interesses[2]}
+  link(rel='stylesheet' href='style.css')
+  title Interesses opgeven
+nav.nav
+  a(href='opgeslagen.html')
+    img(src='img/opgeslagen.svg' alt='')
+  h1 Interesses
+  a(href='javascript:javascript:history.go(-1)')
+    img(src='img/terugknop.svg' alt='')
+form(action='resultaten.html' method='post' required='required')
+  ul
+    li
+      label
+        img(src='img/interesses/vissen.svg' alt='vissen')
+        input(type='checkbox' value='vissen' name='vissen')
+    li
+      label
+        img(src='img/interesses/gooien.svg' alt='gooien')
+        input(type='checkbox' value='gooien' name='gooien')
+    li
+      label
+        img(src='img/interesses/bakken.svg' alt='bakken')
+        input(type='checkbox' value='bakken' name='bakken')
+    li
+      label
+        img(src='img/interesses/braden.svg' alt='braden')
+        input(type='checkbox' value='braden' name='braden')
+    li
+      label
+        img(src='img/interesses/graven.svg' alt='graven')
+        input(type='checkbox' value='graven' name='graven')
+    li
+      label
+        img(src='img/interesses/lopen.svg' alt='lopen')
+        input(type='checkbox' value='lopen' name='lopen')
+    li
+      label
+        img(src='img/interesses/zingen.svg' alt='zingen')
+        input(type='checkbox' value='zingen' name='zingen')
+    li
+      label
+        img(src='img/interesses/eten.svg' alt='eten')
+        input(type='checkbox' value='eten' name='eten')
+    li
+      input(type='submit' value='keuze opslaan')
+footer
+  p Tom Mandemaker klas 209 | mandemt | 2021
