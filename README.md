@@ -55,6 +55,4 @@ npm start
 
 ```
 
-De console zal dan vertellen op welke port de server gehost wordt, en als je dit intypt in de browser (localhost:port), zal je de index.html zien van het project. Nu kan je de feature zelf uittesten.
-
-
+De console zal dan vertellen op welke port de server gehost wordt, en als je dit intypt in de browser (localhost:port), zal je de index.html zien van het project. Nu kan je de feature zelf uittesten. De standaard route is [localhost:4000](localhost:4000)
