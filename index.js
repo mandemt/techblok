@@ -2,8 +2,7 @@ console.log('hallo world')
 
 const express = require('express'); // express wordt gebruikt
 const app = express(); 
-const port = 4000; // met localhost:3000 bezoek je de server in de browser
-
+const port = 4000; // met localhost:4000 bezoek je de server in de browser
 
 
 const personen = [
@@ -58,7 +57,6 @@ app.get('/inloggen', (req,res) => {
 
 
 
-app.use(bodyParser.urlencoded({ extended: false }))
 
 
 
@@ -83,8 +81,9 @@ app.use(express.static('public')) // nu worden er static files opgevraagd vanuit
 
 
 app.listen(port, () =>{
-	console.log('de app lusitert op localhost:3000')
+	console.log('de app lusitert op localhost:4000')
 })
+
 
 app.use(function(req,res,next){
 	res.status(404);
@@ -93,6 +92,7 @@ app.use(function(req,res,next){
 
 
 // nu de dynamic data
+
 
 
 
