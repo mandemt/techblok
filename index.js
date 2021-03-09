@@ -8,6 +8,7 @@ var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt
 
 app.set('view engine', 'pug') // instellen voor view engine
 
+app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een nadere map.
 
 
 const personen = [
@@ -39,6 +40,9 @@ app.get('/persoon.html', (req,res) => {
 	res.render('persoon', {title: 'Interesses'})
 })
 
+app.get('/opgeslagen.html', (req,res) => {
+	res.render('opgeslagen', {title: 'Interesses'})
+})
 
 
 
@@ -47,7 +51,7 @@ app.get('/persoon.html', (req,res) => {
 
 
 
-app.use(express.static('public')) // nu worden er static files opgevraagd vanuit een nadere map.
+
 
 
 app.listen(port, () =>{
