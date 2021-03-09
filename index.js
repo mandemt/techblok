@@ -86,6 +86,7 @@ app.listen(port, () =>{
 	console.log('de app lusitert op localhost:4000')
 })
 
+
 app.use(function(req,res,next){
 	res.status(404);
 	res.send('<h1>Gebruik een andere link!!!</h1>')
@@ -94,5 +95,6 @@ app.use(function(req,res,next){
 
 // nu de dynamic data
 
+.listen(process.env.PORT || 5000)
 
 
