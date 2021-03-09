@@ -97,15 +97,15 @@ app.use(function(req,res,next){
 
 app.get('/', (req,res) => {
 	res.render('index', {title: 'MagnetMatch'})
-}
+})
 
 app.get('/inloggen', (req,res) => {
 	res.render('inloggen', {title: 'Inloggen'})
-}
+})
 
 app.get('/interesses', (req,res) => {
 	res.render('interesses', {title: 'Interesses'})
-}
+})
 
 
 
