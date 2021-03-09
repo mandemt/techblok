@@ -6,10 +6,12 @@
 
 ## Inhoud README
 
-Wat het project doet
-Wat de feature doet
-Installeren
-Testen feature
+[Wat het project doet](https://github.com/mandemt/techblok/blob/main/README.md#wat-dit-project-doet)
+
+[Wat de feature doet](https://github.com/mandemt/techblok#wat-de-feature-doet)
+
+[Installeren](https://github.com/mandemt/techblok#hoe-je-dit-project-installeert-en-zelf-uittest)
+
 
 
 Magnet Match is de naam van mijn feature. Het onderdeel 'magnet' komt van magneet af, en dat staat voor de natuurlijke aantrekking. Magneten met verschillende polen trekken normaal elkaar af, maar met deze feature worden gebruiker uitgedaagd om de diepgang op te zoeken met mensen die juist dezelfde interesses.
