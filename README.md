@@ -56,3 +56,29 @@ npm start
 ```
 
 De console zal dan vertellen op welke port de server gehost wordt, en als je dit intypt in de browser (localhost:port), zal je de index.html zien van het project. Nu kan je de feature zelf uittesten. De standaard route is [localhost:4000](localhost:4000)
+
+## APA bronvermelding
+
+Amazon Web Services (AWS) - Cloud Computing Services. (z.d.). Amazon Web Services, Inc. Geraadpleegd op 9 maart 2021, van https://aws.amazon.com/
+
+Cloud Application Platform | Heroku. (z.d.). heroku.com. Geraadpleegd op 7 maart 2021, van https://www.heroku.com/
+
+freeCodeCamp.org. (2018, 7 november). What is Progressive Enhancement, and why it matters. https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/
+
+Git - Installing Git. (z.d.). Git. Geraadpleegd op 20 februari 2021, van https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Matuzovic, M. (2020, 28 april). The beauty of progressive enhancement. matuzo. https://www.matuzo.at/blog/beauty-of-progressive-enhancement/
+
+MongoDB. (z.d.). The most popular database for modern apps. Geraadpleegd op 9 maart 2021, van https://www.mongodb.com/
+
+N. (z.d.). Download. Node.js. Geraadpleegd op 22 februari 2021, van https://nodejs.org/en/download/
+
+This Person Does Not Exist. (z.d.). thispersondoesnotexit. Geraadpleegd op 6 maart 2021, van https://thispersondoesnotexist.com/
+
+Tse, T. (2017, 15 februari). What is Progressive Enhancement and Why Should You Care? Shopify. https://www.shopify.com/partners/blog/what-is-progressive-enhancement-and-why-should-you-care?utm_source=Medium&utm_campaign=Third%20Party%20Publications&utm_medium=BL&utm_content=What%20is%20progressive%20enhancement%20and%20why%20should%20you%20care%3F
+
+
+Use a local image in Pug 2.0.3. (2018, 19 juli). Stack Overflow. https://stackoverflow.com/questions/51413546/use-a-local-image-in-pug-2-0-3
+
+
+
