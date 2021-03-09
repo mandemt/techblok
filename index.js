@@ -2,8 +2,7 @@ console.log('hallo world')
 
 const express = require('express'); // express wordt gebruikt
 const app = express(); 
-const port = 4000; // met localhost:3000 bezoek je de server in de browser
-
+const port = 5000; // met localhost:3000 bezoek je de server in de browser
 
 
 const personen = [
@@ -95,6 +94,6 @@ app.use(function(req,res,next){
 
 // nu de dynamic data
 
-.listen(process.env.PORT || 5000)
+
 
 

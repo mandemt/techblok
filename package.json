@@ -1,6 +1,7 @@
 {
-  "name": "package",
-  "version": "1.0.0",
+  "name": "magnetmatch",
+  "version": "1.0.0"
+  },
   "description": "informatie",
   "main": "index.js",
   "scripts": {
