@@ -12,19 +12,6 @@ Installeren
 Testen feature
 
 
-#### To do PROJECT
-
-* [ ]  Research stylelint afmaken
-* [ ]  Clean Code artikel
-* [ ]  JavaScript design patterns artikel
-* [ ]  1 build tool
-* [ ]  hosting service
-* [ ]  APA
-* [ ]  wireframe uploaden
-* [ ]  HTML/CSS/STATES
-* [ ]  Andere apps onderzoeken
-wireframe nieuwe job story
-
 Magnet Match is de naam van mijn feature. Het onderdeel 'magnet' komt van magneet af, en dat staat voor de natuurlijke aantrekking. Magneten met verschillende polen trekken normaal elkaar af, maar met deze feature worden gebruiker uitgedaagd om de diepgang op te zoeken met mensen die juist dezelfde interesses.
 
 Met deze app kiezen mensen hun eigen interesses. Wat houdt ze bezig op een werkdag, en wat op een vrije dag? Er worden categorieën aangeboden aan de gebruiker, en die kan er een aantal uitkiezen. Op basis van deze resultaten krijgt de gebruiker een lijst met mensen die óók deze interesse delen.
@@ -44,17 +31,17 @@ De feature laat de gebruiker inloggen met een gebruikersnaam. Op deze naam worde
 
 Clone deze repository door dit in te typen in de Terminal of commandprompt in de map (cd) waar je zelf het project wilt opslaan.
 
-`git clone https://github.com/mandemt/techblok.git`
+```git clone https://github.com/mandemt/techblok.git```
 
 Om de laatste versie van alle modules te krijgen voor dit project, doe je
 
-`npm install`
+```npm install```
 
 Dit kan even duren
 
 Om de server te starten gebruik je het commando 
 
-`npm start` 
+```npm start```
 
 De console zal dan vertellen op welke port de server gehost wordt, en als je dit intypt in de browser (localhost:port), zal je de index.html zien van het project. Nu kan je de feature zelf uittesten.
 
