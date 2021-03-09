@@ -33,17 +33,27 @@ De feature laat de gebruiker inloggen met een gebruikersnaam. Op deze naam worde
 
 Clone deze repository door dit in te typen in de Terminal of commandprompt in de map (cd) waar je zelf het project wilt opslaan.
 
-```git clone https://github.com/mandemt/techblok.git```
+```
+git clone https://github.com/mandemt/techblok.git
+
+```
 
 Om de laatste versie van alle modules te krijgen voor dit project, doe je
 
-```npm install```
+```
+npm install
+
+```
 
 Dit kan even duren
 
 Om de server te starten gebruik je het commando 
 
-```npm start```
+```
+
+npm start
+
+```
 
 De console zal dan vertellen op welke port de server gehost wordt, en als je dit intypt in de browser (localhost:port), zal je de index.html zien van het project. Nu kan je de feature zelf uittesten.
 
