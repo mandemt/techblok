@@ -1,19 +1,25 @@
 doctype html
 head
-  meta(charset='UTF-8')
-  style
- 	 include style.css
+meta(charset='UTF-8')
+
+style
+  include style.css
+
 title Resultaten
+ 
 nav.nav
-  button Persoon
-  h1 resultaten
-  a(href='javascript:javascript:history.go(-1)') Terug
+  a(href='opgeslagen.html')
+    img(src='img/opgeslagen.svg' alt='')
+  h1 MagnetMatch
+  a(href='javascript:javascript:history.go(-1)')
+    img(src='img/terugknop.svg' alt='')
 main
   ul
     li
       h2 hans
-      button sla op
-      img(src='' alt='profielfoto hans')
+      a
+       img(src='img/opgeslagen.svg')
+      img(src='img/pfhans.jfif' alt='profielfoto hans')
       p Interesses:
       ul
         li vissen
