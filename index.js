@@ -42,9 +42,7 @@ app.get('/personen/:personenId', (req, res) => {
 
 app.set('view engine', 'pug') // instellen voor view engine
 
-app.get('/', (req,res) =>{
-	res.render('index', {title: 'Homgepage', message: 'Welkom bij de feature ' }) //het respons bij het opvragen van de hoofdmap
-})
+
 
 
 
