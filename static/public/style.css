@@ -230,17 +230,5 @@ main ul li:nth-of-type(odd){
 main ul li:nth-of-type(even){
 	background-color:#2980b9;
 }
-/*
-ul {
-	width:100%;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
 
-	margin-top:10em;
-	list-style-type:none;
-}
-ul li{
-	margin:0 auto;
-}
-}*/
+
