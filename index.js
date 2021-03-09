@@ -23,19 +23,19 @@ app.get('/', (req,res) => {
 	res.render('index', {title: 'MagnetMatch'})
 })
 
-app.get('/inloggen', (req,res) => {
+app.get('/inloggen.html', (req,res) => {
 	res.render('inloggen', {title: 'Inloggen'})
 })
 
-app.get('/interesses', (req,res) => {
+app.get('/interesses.html', (req,res) => {
 	res.render('interesses', {title: 'Interesses'})
 })
 
-app.get('/resultaten', (req,res) => {
+app.get('/resultaten.html', (req,res) => {
 	res.render('resultaten', {title: 'Interesses'})
 })
 
-app.get('/persoon', (req,res) => {
+app.get('/persoon.html', (req,res) => {
 	res.render('persoon', {title: 'Interesses'})
 })
 
