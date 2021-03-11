@@ -27,7 +27,7 @@ db = await client.db(process.env.DB_NAME)
 
 connectDB()
 	.then(() =>{
-	console.log('gelukt')
+	console.log('gelukt om te verbinden met de database in .env bestand')
 	})
 	.catch(error =>{
 		console.log(error)
@@ -100,7 +100,6 @@ app.use(function(req,res,next){
 })
 
 
-// nu de dynamic data
 
 
 
@@ -110,22 +109,7 @@ app.use(function(req,res,next){
 
 
 
-app.get('/interesses.html', (req,res) => {
-	res.render('interesses', {title: 'Interesses'})
-})
 
-app.post('/resultaten.html', (req,res) => {
-	res.render('resultaten', {title: 'Interesses'});
-	const intrest = req.body.intrest;
-	console.log(intrest);
-})
 
-app.get('/persoon.html', (req,res) => {
-	res.render('persoon', {title: 'Interesses'})
-})
-
-app.get('/opgeslagen.html', (req,res) => {
-	res.render('opgeslagen', {title: 'Interesses'})
-})
 
 
