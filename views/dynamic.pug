@@ -1,0 +1,13 @@
+doctype html
+head
+style
+    include style.css
+
+
+title formulier
+form(action='/add' method='post')
+  input#naam(type='text' name='naam')
+  input#interesses(type='text' name='interesse')
+  input(type='submit')
+
+p Hoi #{naam}, jouw hobby is #{intrest}
