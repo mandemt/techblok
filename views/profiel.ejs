@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../style.css">
+  <title> 
+    <%= gebruiker.gebruikersnaam %>
+  </title>
+</head>
+<body>
+  <p>naam: <%= gebruiker.gebruikersnaam %> </p>
+  <p>interesses: <%= gebruiker.interesse %> </p>
+
+    <% gebruikers.forEach(function(gebruikers) { %>
+
+    <li>
+      <%=gebruikers.gebruikersnaam %>
+      <%=gebruikers.interesse %>
+
+    </li>
+    <% }); %>
+
+    <p> <%= zangers %></p>
+</body>
+</html>
+  
+
+    

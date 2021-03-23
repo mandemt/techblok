@@ -10,7 +10,8 @@ const dotenv = require('dotenv').config();
 const {MongoClient} = require('mongodb');
 var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt om het verwerken van data uit een request makkelijker te maken
 
-app.set('view engine', 'pug') // instellen voor view engine
+let ejs = require('ejs');
+app.set('view engine', 'ejs') // instellen voor view engine
 
 app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een andere map.
 
@@ -41,14 +42,16 @@ const gebruikers = [
 	
 ];
 
+
+
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.get('/', (req,res) => {
-	res.render('index', {title: 'MagnetMatch'})
+	res.render('index.html', {title: 'MagnetMatch'})
 })
 
 
-app.get('/toevoegen.html', (req,res) => {
+app.get('/toevoegen', (req,res) => {
 	res.render('dynamic', {title: 'Inloggen'})
 })
 
@@ -63,9 +66,8 @@ app.post('/toevoegen/add', (req, res,)=>{
 	gebruikers.push(gebruiker);
 
 	
-	res.render('profiel', {gebruiker});
+	res.render('profiel', {gebruikers, gebruiker});
 
-	
 })
 
 
