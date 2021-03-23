@@ -12,7 +12,7 @@ var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt
 
 app.set('view engine', 'pug') // instellen voor view engine
 
-app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een nadere map.
+app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een andere map.
 
 
 
@@ -77,10 +77,10 @@ app.get('/toevoegen/:gebruikersId', (req, res) => {
     const gebruiker = gebruikers.find( gebruiker => gebruiker.id == req.params.gebruikersId);
 	const interesse = req.body.interesse;
 	console.log('gebruikers')
-	console.log(anderen)
+	
     res.render('profiel', { gebruiker, gebruikers});
 	console.log(gebruiker)
-	console.log(anderen)
+	
 		
 
 });
