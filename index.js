@@ -92,7 +92,9 @@ app.get('/toevoegen/:gebruikersId', (req, res) => {
 
 
 
-
+app.listen(PORT, () => {
+	console.log(`Example app listening on port ${PORT}!`)
+  })
 
 // app.listen(port, () =>{
 // 	console.log('de app lusitert op localhost:', port)
