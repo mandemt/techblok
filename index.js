@@ -94,9 +94,9 @@ app.get('/toevoegen/:gebruikersId', (req, res) => {
 
 
 
-app.listen(port, () =>{
-	console.log('de app lusitert op localhost:', port)
-})
+// app.listen(port, () =>{
+// 	console.log('de app lusitert op localhost:', port)
+// })
 
 app.use(function(req,res){
 	res.status(404);
