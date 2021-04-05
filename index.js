@@ -1,6 +1,6 @@
 console.log('hallo world')
 
-
+const PORT = process.env.PORT;
 
 
 const express = require('express'); // express wordt gebruikt
