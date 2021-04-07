@@ -8,19 +8,26 @@
 </head>
 <body>
   <h1>OPGESLAGEN</h1>
-
+<h2>Hier komen al je opgeslagen gebruikers terecht, je kunt ze ook weer verwijderen:</h2>
   <ol>
     <% gebruikers.forEach(function(gebruikers) { %>
 
  <li>
-     <p><%=gebruikers.gebruikersnaam %></p> 
-     <a href="profiel/<%=gebruikers.gebruikersnaam%>">bekjk</a>
+     <p>Naam: <%=gebruikers.gebruikersnaam %></p> 
+     <a href="profiel/<%=gebruikers.gebruikersnaam%>">Bekijk <%=gebruikers.gebruikersnaam %></a>
      <form action="verwijder" method="post"> 
-       <input type="submit" value="<%=gebruikers.gebruikersnaam%>" name="naam">
+       <input type="submit" value="<%=gebruikers.gebruikersnaam%>" name="naam" id="verwijder">
+       <br>
+       Verwijder
 
      </form>
     </li>
     <% }); %>
     </ol>
+    <footer>
+      <a href="../opgeslagen">saved</a>
+      <a href="../overzicht">overzicht</a>
+      <a href="../toevoegen">nieuw account maken</a>
+   </footer>
 </body>
 </html>

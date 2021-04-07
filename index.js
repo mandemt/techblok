@@ -149,7 +149,7 @@ app.listen(port, () =>{
 
 app.use(function(req,res){
 	res.status(404);
-	res.send('<h1>Gebruik een andere link!!!</h1>')
+	res.render('404')
 })
 
 
