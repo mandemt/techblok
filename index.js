@@ -5,14 +5,14 @@ const PORT = process.env.PORT;
 
 const express = require('express'); // express wordt gebruikt
 const app = express(); 
-// const port = 4000; // met localhost:3000 bezoek je de server in de browser
+const port = 4000; // met localhost:3000 bezoek je de server in de browser
 const dotenv = require('dotenv').config();
 const {MongoClient} = require('mongodb');
 var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt om het verwerken van data uit een request makkelijker te maken
 
 let ejs = require('ejs');
 app.set('view engine', 'ejs') // instellen voor view engine
-app.set('port', process.env.PORT || 4000)
+// app.set('port', process.env.PORT || 4000)
 app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een andere map.
 
 
@@ -130,6 +130,7 @@ app.get('/mijnprofiel', async (req, res,)=>{
 	gebruikers = await db.collection('gebruikers').find().toArray();
 
 	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse}; 
+	// await db.collection('gebruikers').insertOne(gebruiker)
 	
 	const aantalMensen = gebruikers.length;
 	console.log(aantalMensen)
@@ -138,11 +139,13 @@ app.get('/mijnprofiel', async (req, res,)=>{
 
 })
 
-app.listen(PORT, () => {
-	console.log(`Example app listening on port ${PORT}!`)
-  })
+// app.listen(PORT, () => {
+// 	console.log(`Example app listening on port ${PORT}!`)
+//   })
 
-
+app.listen(port, () =>{
+	console.log('de app lusitert op localhost:', port)
+})
 
 app.use(function(req,res){
 	res.status(404);
