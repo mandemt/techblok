@@ -122,7 +122,22 @@ app.get('/profiel/:gebruikersId', async (req, res) => {
 });
 
 
+app.get('/mijnprofiel', async (req, res,)=>{
 
+	
+
+	let gebruikers = {};
+	gebruikers = await db.collection('gebruikers').find().toArray();
+
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse}; 
+	// await db.collection('gebruikers').insertOne(gebruiker)
+	
+	const aantalMensen = gebruikers.length;
+	console.log(aantalMensen)
+	
+	res.render('profiel', {gebruikers, gebruiker, aantalMensen});
+
+})
 
 // app.listen(PORT, () => {
 // 	console.log(`Example app listening on port ${PORT}!`)
@@ -136,6 +151,7 @@ app.use(function(req,res){
 	res.status(404);
 	res.send('<h1>Gebruik een andere link!!!</h1>')
 })
+
 
 
 

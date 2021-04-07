@@ -8,25 +8,17 @@
 </head>
 <body>
   <h1>JOUW PROFIEL</h1>
-  <p>naam: <%= gebruiker.gebruikersnaam %> </p>
-  <p>interesses: <%= gebruiker.interesse %> </p>
-  <p>er zijn <%= aantalMensen %> resultaten</p>
-<ol>
-    <% gebruikers.forEach(function(gebruikers) { %>
+  <h2>Hoi <%= gebruiker.gebruikersnaam%>, Dit is jouw profiel:</h2>
+  <div id="profiel">
+  <p>Naam: <%= gebruiker.gebruikersnaam %> </p>
+  <p>Jouw interesses: <%= gebruiker.interesse %> </p>
+</div>
+<h2>Hoe nu verder?</h2>
+  <h3>Er zijn <%= aantalMensen %> andere gebruikers. Mogelijk hebben zij een gedeelde interesse!</h3>
+  <p>Bekijk hier het complete overzicht: </p>
+  <a href="/overzicht" id="btn1">Overzicht</a>
 
-    <li>
-      
-  
-        <%=gebruikers.gebruikersnaam %>
-        <%=gebruikers.interesse %>
-   
-     
-
-    </li>
-    <% }); %>
-  </ol>
-    <p>Bekijk hier het overzicht: </p>
-    <a href="/overzicht">hiero</a>
+ 
 </body>
 </html>
   

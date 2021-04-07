@@ -4,20 +4,29 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
-  <title> formulier </title>
+  <title> Overzicht </title>
 </head>
 <body>
-  <h2>Stel je profiel samen:</h2>
+  <h1>Andere gebruikers:</h1>
   <h2>overzicht</h2>
 
   <ol>
     <% gebruikers.forEach(function(gebruikers) { %>
 
     <li>
-      <%=gebruikers.gebruikersnaam %>
-      <%=gebruikers.interesse %>
+      <p>
+     <a href="profiel/<%=gebruikers.gebruikersnaam %>"><%=gebruikers.gebruikersnaam %></a> 
+
+      </p>
+      <p>
+     <%=gebruikers.interesse %>
+
+      </p>
       <form action="opslaan" method="post">
-<input type="submit" value="<%=gebruikers.gebruikersnaam%>" name="naam">
+  <input type="submit"  value="<%=gebruikers.gebruikersnaam%>" name="naam" id="opslaan">
+  <br>
+  Opslaan
+
 
     </li>
 
