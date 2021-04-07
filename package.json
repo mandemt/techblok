@@ -1,7 +1,7 @@
 {
   "name": "magnetmatch",
   "version": "1.0.0",
-  "description": "informatie",
+  "description": "Magnet match is een applicatie die jou helpt om anderen te vinden met dezelfde interesses als jij! Je kiest een aantal interesses die jij heel leuk vindt om te doen. Vervolgens stuur je dit door en ontvang jij een lijst met mensen die ook deze interesses hebt opgegeven, en daar kan jij contact mee opnemen",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
@@ -13,7 +13,8 @@
   "keywords": [
     "package",
     "json",
-    "mandemt"
+    "mandemt",
+    "magnetmatch"
   ],
   "author": "mandemt",
   "license": "ISC",
