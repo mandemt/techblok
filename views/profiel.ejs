@@ -7,19 +7,26 @@
   </title>
 </head>
 <body>
+  <h1>JOUW PROFIEL</h1>
   <p>naam: <%= gebruiker.gebruikersnaam %> </p>
   <p>interesses: <%= gebruiker.interesse %> </p>
-
+  <p>er zijn <%= aantalMensen %> resultaten</p>
+<ol>
     <% gebruikers.forEach(function(gebruikers) { %>
 
     <li>
-      <%=gebruikers.gebruikersnaam %>
-      <%=gebruikers.interesse %>
+      
+  
+        <%=gebruikers.gebruikersnaam %>
+        <%=gebruikers.interesse %>
+   
+     
 
     </li>
     <% }); %>
-
-    <p> </p>
+  </ol>
+    <p>Bekijk hier het overzicht: </p>
+    <a href="/overzicht">hiero</a>
 </body>
 </html>
   

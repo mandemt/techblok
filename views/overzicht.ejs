@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title> formulier </title>
+</head>
+<body>
+  <h2>Stel je profiel samen:</h2>
+  <h2>overzicht</h2>
+
+  <ol>
+    <% gebruikers.forEach(function(gebruikers) { %>
+
+    <li>
+      <%=gebruikers.gebruikersnaam %>
+      <%=gebruikers.interesse %>
+      <form action="opslaan" method="post">
+<input type="submit" value="<%=gebruikers.gebruikersnaam%>" name="naam">
+
+    </li>
+
+  </form>
+    <% }); %>
+  
+    </ol>
+</body>
+</html>

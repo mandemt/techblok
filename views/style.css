@@ -226,14 +226,16 @@ main ul figure img{
 
 
 
-
+ol li{
+	margin:0 auto;
+}
 
 footer{
 	text-align:center;
 	padding:0;
 	color:#ecf0f1 ;
 	width:100%;
-	/* position:fixed; */
+	position:absolute;
 	bottom:0;
 	background-color:#2c3e50;
 }

@@ -5,14 +5,14 @@ const PORT = process.env.PORT;
 
 const express = require('express'); // express wordt gebruikt
 const app = express(); 
-// const port = 4000; // met localhost:3000 bezoek je de server in de browser
+const port = 4000; // met localhost:3000 bezoek je de server in de browser
 const dotenv = require('dotenv').config();
 const {MongoClient} = require('mongodb');
 var bodyParser = require('body-parser') // het package bodyParser wordt gebruikt om het verwerken van data uit een request makkelijker te maken
 
 let ejs = require('ejs');
 app.set('view engine', 'ejs') // instellen voor view engine
-app.set('port', process.env.PORT || 4000)
+// app.set('port', process.env.PORT || 4000)
 app.use(express.static('static')) // nu worden er static files opgevraagd vanuit een andere map.
 
 
@@ -35,13 +35,6 @@ connectDB()
 		console.log(error)
 	})
 
-const gebruikers = [
-	{"id": "mandemt", "gebruikersnaam": "mandemt", "interesse": ["vissen", "hakken", "zingen"]},
-	{"id": "hans", "gebruikersnaam": "hans", "interesse": ["bakken", "braden", "hakken"]},
-	{"id": "piet", "gebruikersnaam": "piet", "interesse": ["bakken", "zingen", "vissen"]},
-	{"id": "admin", "gebruikersnaam": "admin", "interesse": ["zingen"]},
-	
-];
 
 
 
@@ -56,34 +49,73 @@ app.get('/toevoegen', (req,res) => {
 	res.render('dynamic', {title: 'Inloggen'})
 })
 
-
-
-
-
-app.post('/toevoegen/add', (req, res,)=>{
-
-	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse};
-	
-	gebruikers.push(gebruiker);
+app.post('/nieuwprofiel', async (req, res,)=>{
 
 	
-	res.render('profiel', {gebruikers, gebruiker});
+
+	let gebruikers = {};
+	gebruikers = await db.collection('gebruikers').find().toArray();
+
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse}; 
+	await db.collection('gebruikers').insertOne(gebruiker)
+	
+	const aantalMensen = gebruikers.length;
+	console.log(aantalMensen)
+	
+	res.render('profiel', {gebruikers, gebruiker, aantalMensen});
 
 })
 
+app.get('/overzicht', async (req,res)=>{
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse};
+	
+	let gebruikers = {}
+	gebruikers = await db.collection('gebruikers').find().toArray();
 
-app.get('/toevoegen/:gebruikersId', (req, res) => {
+	res.render('overzicht', {gebruikers, gebruiker})
 	
-	
+})
 
+
+app.post('/opslaan', async (req,res)=>{
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam};
 	
-    const gebruiker = gebruikers.find( gebruiker => gebruiker.id == req.params.gebruikersId);
-	const interesse = req.body.interesse;
-	console.log(interesse)
-	console.log('gebruikers')
+	let gebruikers = {}
+	gebruikers = await db.collection('opgeslagen').find().toArray();
+await db.collection('opgeslagen').insertOne(gebruiker)
+
+	res.render('opgeslagen', {gebruikers, gebruiker})
 	
-    res.render('profiel', { gebruiker, gebruikers});
+});
+app.get('/opgeslagen', async (req,res)=>{
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam, interesse: req.body.interesse};
+	
+	let gebruikers = {}
+	gebruikers = await db.collection('opgeslagen').find().toArray();
+
+
+
+	res.render('opgeslagen', {gebruikers, gebruiker})
+	
+})
+app.post('/verwijder', async (req,res)=>{
+	const gebruiker = {id: req.body.naam, gebruikersnaam: req.body.naam};
 	console.log(gebruiker)
+	let gebruikers = {}
+	gebruikers = await db.collection('opgeslagen').find().toArray();
+await db.collection('opgeslagen').deleteOne(gebruiker)
+
+	res.render('opgeslagen', {gebruikers, gebruiker})
+})
+app.get('/profiel/:gebruikersId', async (req, res) => {
+	
+	let gebruikers = {}
+	
+	gebruikers = await db.collection('gebruikers').find().toArray;
+    const gebruiker = await db.collection('gebruikers').findOne({id: req.params.gebruikersId});
+	const interesse = req.body.interesse;
+	
+    res.render('specifiek', {gebruikers, gebruiker});
 	
 		
 
@@ -92,13 +124,13 @@ app.get('/toevoegen/:gebruikersId', (req, res) => {
 
 
 
-app.listen(PORT, () => {
-	console.log(`Example app listening on port ${PORT}!`)
-  })
+// app.listen(PORT, () => {
+// 	console.log(`Example app listening on port ${PORT}!`)
+//   })
 
-// app.listen(port, () =>{
-// 	console.log('de app lusitert op localhost:', port)
-// })
+app.listen(port, () =>{
+	console.log('de app lusitert op localhost:', port)
+})
 
 app.use(function(req,res){
 	res.status(404);
